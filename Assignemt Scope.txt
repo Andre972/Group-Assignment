@@ -1,0 +1,84 @@
+1. Create an Issue Ticket with Following Details: As an Object with fields
+{
+    - Title of ticket
+    - Description of ticket in a paragraph
+    - Who discovered the problem
+    - The date the issue was made
+    - What project the issue is related to 
+    - Who the problem is assigned to 
+    - Status of issue(drop down that is open/solved/overdue meaning late)
+    - Priority of the ussue this is drop down of (low/meduim/ high)
+    - Target resolution date meaning date it must be done so this is a value that must be entered
+    - Actual date submited 
+    - Small description of info how you will fix the problem
+}
+//Kaizer please help fix submit button for issue ticket 
+**I Created A new solution using bootstrap for the css and minified javascript to recereate Andre's Form.
+**I referenced Andre's code so I was able to recreate the form and get the javascript functions to work using the objects as required.
+**To display the Added Issues I used the DOM elements to display the elemnts that were inside an issue[] array and iterated through them using a for loop.
+**Also Added an invisible HTML modal to catch emptyfields exceptions, it will only appear if some importants fiels are empty.
+
+2. Creating people to assign ussues to: this is an object with the following Detail:
+{
+    - Name
+    - Surname
+    - Email adress
+    - Unique username 
+    - Add a profile picture
+    - Unique ID
+}
+//Reneilwe please change the login to create user profile and save it in as an object 
+//Kaizer please help with randomization of ID for the user profile 
+**Fixed Randomization problem.
+**Allowed User to Add Profile Picture.
+##Instead of calling the form log-in I was thinking we can call it Create Developers
+**Done Working on saving user as an object and displaying all the Developers created
+**Shows users as they are added
+**Also Deletes Users
+
+3. Assigning Issues to a Created Developers
+{
+    - use the unique Id as the object name and we will then the ticket title as the inuque id and 
+    - then we can link the ticket ID to that person Id thats an object so that way the person is linked to multiple ticket ids}
+    - use map  to link person object too ticket object   
+}
+##This will be discused in the next meeting
+
+4. View all added Issues
+{
+    - this is just all the title IDs that will have a button next to each title ID and when that button is pressed it will display 
+    ->the rest of the object ticket for that title/id
+}
+//Kaizer said that if he fix the submit button then it should be easy to make this one work also  
+**Fixed the View all added issues problem:
+{
+    Select a issue that will show details of that usue like sellecting the ticket and seeing the detaile of it
+}
+**There will be no need for this as:-->
+**Everytime you click the Add Issue button-> an issue object is saved to the local storage then displayed to the document using DOM elements
+
+5. Creating Projects. 
+{
+    those projects are maltiple tickts that are assigned to a particular person  
+    but that project basicly also sirtan parts of a website
+    so we need to know what tipe of website topic we will use to make project for and problems for that paticular website and 
+    what parts that website has. and those parts are the projects. can be a simple website(just Idea website not actualy code)
+    if project is created it is assigned to devolpers and the developers is assigned 2 issues
+ }
+//Reneilwe can create this form for the projects part 
+//Kaizer is creating the form
+##I think the form should allow the user to create the project and allocate the created users to the project
+**Done creating the form and its fully Functionalities
+##The only thing missing is for the created users to be added for the specific projects when clicking the select developers button. developer should be taken from the users local storage and displayed 
+
+**All Forms are validating input
+**Functionalities are done 
+------------------------------------------------------------------------------------------------------------------------------
+If You guys Are not Happy with the changes I made please address them so that they can be discussed and dealt with accordingly
+------------------------------------------------------------------------------------------------------------------------------
+
+
+**I tried my best to take everything that you guys did and put it together so that it can actually work**
+
+Requirements 3 and 4 on the document have to be discussed for completion today 2022/08/30
+

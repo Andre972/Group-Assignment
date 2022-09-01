@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Bootstrap Stylesheet-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!--Local Fallback Bootstrap Stylesheet-->
+    <link rel="stylesheet" href="Bootstrap/bootstrap.min.css">
+    <title>Developer Profile</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Add Developer Form</h>
+            <span></span>
+        <div class="jumbotron">
+            <h3>Add New Developer</h3>
+            <form id="userInputForm">
+                <!--Upload Image for Profile Picture-->
+                <div class="form-group">
+                    <center class="form-group">
+                        <div class="form-group">
+                            <img id="propic" src="Images/profile.png" alt="Profile" width="150px">
+                        </div>
+                        <div class="form-group">
+                            <input type="file" onchange="readURL(this);" class="form-control">
+                        </div>
+                    </center>
+                </div>
+                <div class="form-group">
+                    <input type="text" id="firstname" placeholder="First Name" class="form-control">
+                </div>
+                <div class="form-group">
+                    <input type="text" id="lastname" placeholder="Last Name" class="form-control">
+                </div>
+                <div class="form-group">
+                    <input type="text" id="username" placeholder="User Name" class="form-control">
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" placeholder="Email Address" class="form-control">
+                </div>
+                <div class="form-group">
+                    <button id="add-user" class="btn btn-primary" onclick="submitUser()">Add Developer</button>
+                </div>
+            </form>
+        </div>
+
+        <!--Display Added Users Here-->
+        <div class="col-lg-12">
+            <div id="usersList">
+            </div>
+        </div>
+    </div>
+    
+    <!--Modal To Catch Empty Fields-->
+    <div class="modal fade" id="emptyField" tabindex="-1" role="dialog" aria-labelledby="emptyFieldLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="emptyFieldLabel">Invalid Input!</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Please provide the desciption of the issue and also the person name who you want to assign the issue.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Bootstrap Jquery and JS-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <!--Local Fallback Bootstrap Jquery and JS-->
+    <script src="Bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="Bootstrap/jquery.min.js"></script>
+    <script src="profile.js"></script>
+</body>
+</html>
